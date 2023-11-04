@@ -20,6 +20,15 @@ Set up autoscaling...
 - still run SQL on top of external tables via Snowflake for example
 
 For unstructured data:
+- what is semi-structured data?
+- storing files...
+- compute separate from storage...
+- snowflake uses data lake
 
-https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/learn/lecture/31028318#content
 
+# Data Lakehouse
+
+- combines ACID with data lake
+- metadata
+- schema stored in lakehouse metastore
+- governance: control & have access control!
