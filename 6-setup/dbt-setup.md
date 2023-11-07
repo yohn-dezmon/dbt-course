@@ -2,7 +2,7 @@
 
 https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/learn/lecture/37985546#content
 
-`Activate-MyEnv`
+`Activate-MyVenv`
 
 creating a dbt configuration file is different on mac vs windows.  
 you need a `.dbt` folder in your "home folder".  
@@ -107,7 +107,7 @@ dbtlearn:
       database: AIRBNB
       password: dbtPassword123
       role: transform
-      schema: RAW
+      schema: DEV
       threads: 1
       type: snowflake
       user: dbt
@@ -120,4 +120,7 @@ https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-
 
 
 https://app.snowflake.com/yzsyorf/wl36460/worksheets
+
+apparently I am supposed to use `DEV` as the schema.
+Last time.
 
