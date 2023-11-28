@@ -15,3 +15,4 @@ WHERE review_text is not null
 {% if is_incremental() %}
     AND review_date > (select max(review_date) from {{ this }})
 {% endif %}
+-- this refers to this model (fct_reviews.sql)
