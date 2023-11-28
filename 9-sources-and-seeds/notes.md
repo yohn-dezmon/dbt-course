@@ -35,3 +35,10 @@ dbt source freshness
 
 this fails, because the last time we updated `reviews` was over 24 hr ago.  
 
+freshness config in sources.yml: 
+```
+        loaded_at_field: date
+        freshness:
+          warn_after: {count: 1, period: hour}
+          error_after: {count: 24, period: hour}
+```
