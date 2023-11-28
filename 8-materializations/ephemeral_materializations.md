@@ -7,4 +7,7 @@ in `dbt_project.yml` within the `models` section, you can specify that you want 
 
 Since you created them as views preivously, they are still in snowflake, but now they don't get created when you run dbt run...
 
-You can drop the views yourself in snowflake.
+You can drop the views yourself in snowflake.  
+
+You can visit target/compiled/dbtlearn/... to debug the SQL that  
+ultimately gets run by dbt.  

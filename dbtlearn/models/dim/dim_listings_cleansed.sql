@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized = 'view',
+    )
+}}
 WITH src_listings AS (
     -- to refer to the src_listings model
     -- you can use JINJA! (and a macro)
