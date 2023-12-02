@@ -36,3 +36,23 @@ You can update the overview file as well!
 `/assets` folder for storing files you don't want to be available publicly but you need for documentation.  
 
 
+### Lineage Graph 
+
+```
+dbt run --select src_hosts+
+```
+
+^ that will run the src_host model and all the models that depend on it.   
+You can also put the `+` in front of src_hosts.  
+You can also do this in the lineage graph display, which can be accessed from the blue icon in the dbt documentation page.  
+
+
+### dbt power user tab 
+
+In VSCode, when you open up a model, you can go to the left hand side and click the dbt model.  
+Then you can click the check mark to run a specific set of tests.  
+
+There is also a `LINEAGE` tab in the tabs where `TERMINAL` is.  
+
+
+

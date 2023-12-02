@@ -35,6 +35,8 @@ models:
   dbtlearn:
   # explicit default
     +materialized: view
+    +post-hook:
+      - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
     dim:
       +materialized: table
     src:
